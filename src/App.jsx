@@ -1,17 +1,22 @@
-import { Link, Routes, BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import Wather from "./pages/Wather";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import MoreWather from "./pages/MoreWather";
 import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route to="/" element={<Wather />}></Route>
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <div className="container-app">
+      {" "}
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/more-wather" element={<MoreWather />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </div>
   );
 }
 

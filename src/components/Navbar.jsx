@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const nav = [{ id: 1, to: "/", name: "Wather" }];
+  const Nav = [
+    { id: 1, to: "/", name: "Home" },
+    { id: 2, to: "more-wather", name: "More Wather" },
+  ];
   return (
-    <div>
+    <nav>
       <ul>
-        <li>halo</li>
-        <li>allo</li>
-        <li>hallo</li>
+        {Nav.map((navbar) => (
+          <Link key={navbar.id}>{navbar.name}</Link>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 
