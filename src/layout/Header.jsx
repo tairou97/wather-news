@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 
 const Header = () => {
   return (
-    <header>
+    <div className="header">
       <Navbar />
-    </header>
+    </div>
   );
 };
 
