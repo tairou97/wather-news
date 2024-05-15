@@ -23,19 +23,27 @@ body {
   color: #efefef;
   margin-top: 1rem;
   background-color: #1083cb;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 
 
-.container-app {}
 
-.home {}
+@media screen and (max-width: 768px) {
+  .home-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
 
 .header {
   background-color: #1083cb;
   text-shadow: 0 0 10px rgb(255, 225, 0);
   color: white;
+  font-size: 2rem;
   text-align: center;
   padding: 2rem;
   position: sticky;
@@ -53,14 +61,19 @@ body {
   padding: 1rem;
 }
 
-.search {
-  background-color: #959595;
-  padding: 1rem;
+.form {
+  background-color: #0c8ad869;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  padding: 0.2rem;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
 
-  margin-bottom: 1rem;
+
+}
+
+.btn {
+  background-color: #ee8701db;
+  color: #013f66;
+  border-radius: 5px;
 }
 
 .citys {

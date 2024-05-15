@@ -25,21 +25,30 @@ const Home = () => {
     const fetchData = async () => {
       const berlinWeather = await fetchWeather("Berlin");
       const parisWeather = await fetchWeather("Paris");
+      const santoriniWeather = await fetchWeather("Santorini");
+      const cubaWeather = await fetchWeather("Cuba");
       const newYorkWeather = await fetchWeather("New York");
       const romeWeather = await fetchWeather("Rom");
       const accraWeather = await fetchWeather("Accra");
       const malagaWeather = await fetchWeather("Malaga");
       const londonWeather = await fetchWeather("London");
-      const niederlandeWeather = await fetchWeather("Niederlande");
+      const amsterdamWeather = await fetchWeather("Amsterdam");
+      const rotterdamWeather = await fetchWeather("Rotterdam");
+      const rhodesWeather = await fetchWeather("Rhodes");
+
       setWeather([
         berlinWeather,
         parisWeather,
+        santoriniWeather,
         newYorkWeather,
         romeWeather,
         accraWeather,
         malagaWeather,
         londonWeather,
-        niederlandeWeather,
+        amsterdamWeather,
+        rotterdamWeather,
+        rhodesWeather,
+        cubaWeather,
       ]);
     };
 
@@ -61,7 +70,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="flex justify-evenly items-center">
+      <div className=" home-form flex justify-evenly items-center">
         {" "}
         <form className="form" onSubmit={handleSubmit}>
           <input
@@ -71,7 +80,7 @@ const Home = () => {
             type="text"
             placeholder="Enter city name"
           />
-          <button type="submit" className="bg-gray-500 p-2 m-3 rounded-lg">
+          <button type="submit" className="btn p-2 m-3 ">
             Search Weather
           </button>
         </form>
