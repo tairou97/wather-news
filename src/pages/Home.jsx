@@ -88,12 +88,10 @@ const Home = () => {
       </div>
 
       <div className=" citys ">
-        {" "}
         {weather ? (
           weather.map((cityWeather, index) => (
             <div key={index} className="city">
               <div className="cityname">
-                {" "}
                 <h2>{cityWeather.name}</h2>
                 <p>
                   {cityWeather.name}, {cityWeather.sys.country}
