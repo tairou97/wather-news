@@ -195,11 +195,10 @@ h3 .home {
   color: white;
   text-align: center;
   padding: 2rem;
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 1rem;
+  position: relative;
+
+  top: 30rem;
+
 }
 
 .card {
@@ -238,10 +237,20 @@ h3 .home {
     margin-top: 30rem;
   }
 
+
+
+  .header {
+    position: relative;
+    top: 0;
+  }
+
   .footer {
-    margin-top: 30rem;
+    margin-top: 40rem;
 
   }
+
+
+
 
 }
 
