@@ -202,6 +202,49 @@ h3 .home {
   border-radius: 1rem;
 }
 
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rem;
+  }
+
+  .footer {
+    margin-top: 30rem;
+
+  }
+
+}
+
 @media screen and (max-width: 1268px) {
   .citys {
     grid-template-columns: repeat(3, 1fr);
